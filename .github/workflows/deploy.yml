@@ -22,8 +22,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm i
-    - run: npm install -g pm2
     - run: npm rebuild
 
     - name: Start application
-      run: pm2 --name MyApp start npm -- start
+      run: npm start
