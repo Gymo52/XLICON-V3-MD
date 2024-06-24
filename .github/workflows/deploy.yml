@@ -27,8 +27,4 @@ jobs:
       # Start your application in the background
     - run: npm start &
 
-      # Wait for your application to be ready (e.g., localhost:3000)
-    - name: Wait for app to start
-      run: npx wait-on http://localhost:3000
-
-      # Add more steps as needed (e.g., deploy, publish, etc.)
+     
